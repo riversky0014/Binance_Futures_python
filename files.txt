@@ -1,0 +1,4 @@
+/usr/local/lib/python3.8/site-packages/binance_futures-1.1.0-py3.8.egg
+/usr/local/bin/easy_install
+/usr/local/bin/easy_install-3.8
+/usr/local/bin/chardetect

@@ -605,3 +605,13 @@ class RequestClient(object):
         response = call_sync(self.request_impl.get_api_trading_stats(symbol))
         self.refresh_limits(response[1])
         return response[0]
+    
+    def get_commission_rate(self, symbol: 'str' = None) -> any:
+        """
+        User Commission Rate (USER_DATA)
+
+        GET /fapi/v1/commissionRate (HMAC SHA256)
+        """
+        response = call_sync(self.request_impl.get_commission_rate(symbol))
+        self.refresh_limits(response[1])
+        return response[0]

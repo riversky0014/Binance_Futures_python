@@ -79,7 +79,7 @@ class RequestClient(object):
         """
         response = call_sync(self.request_impl.get_recent_trades_list(symbol, limit))
         self.refresh_limits(response[1])
-        return response[0]
+        return response
            
     def get_old_trade_lookup(self, symbol: 'str', limit: 'int' = None, fromId: 'long' = None) -> any:
         """
@@ -91,7 +91,7 @@ class RequestClient(object):
         """
         response = call_sync(self.request_impl.get_old_trade_lookup(symbol, limit, fromId))
         self.refresh_limits(response[1])
-        return response[0]
+        return response
             
     def get_aggregate_trades_list(self, symbol: 'str', fromId: 'long' = None, 
                             startTime: 'long' = None, endTime: 'long' = None, limit: 'int' = None) -> any:

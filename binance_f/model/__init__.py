@@ -50,3 +50,4 @@ from binance_f.model.takerbuysellratio import TakerBuySellRatio
 from binance_f.model.blvtinfoevent import BLVTInfoEvent
 from binance_f.model.blvtnavcandlestickevent import BLVTNAVCandlestickEvent
 from binance_f.model.compositeindexevent import CompositeIndexEvent
+from binance_f.model.commissionrate import CommissionRate
