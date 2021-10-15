@@ -382,6 +382,8 @@ class WebsocketRequestImpl(object):
                 result = OrderUpdate.json_parse(json_wrapper)
             elif(json_wrapper.get_string("e") == "listenKeyExpired"):
                 result = ListenKeyExpired.json_parse(json_wrapper)
+            elif json_wrapper.get_string("e") == 'ACCOUNT_CONFIG_UPDATE':
+                result = json_wrapper
             return result
 
         request = WebsocketRequest()
